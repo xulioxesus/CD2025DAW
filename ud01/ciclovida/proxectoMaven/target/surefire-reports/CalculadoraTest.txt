@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: CalculadoraTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 s -- in CalculadoraTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 s -- in CalculadoraTest

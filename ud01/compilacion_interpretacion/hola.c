@@ -7,7 +7,5 @@ int main() {
     		printf("Hola pepito\n");
 	}
 
-	printf(edad);
-
     	return 0;
 }
