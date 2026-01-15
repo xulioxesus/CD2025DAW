@@ -21,5 +21,7 @@ class LibroTest {
         assertEquals(tipo, libro.tipo);
         assertEquals(editorial, libro.editorial);
         assertEquals(ano, libro.ano);
+        assertNotNull(libro.escrito);
+        assertTrue(libro.escrito.isEmpty());
     }
 }
