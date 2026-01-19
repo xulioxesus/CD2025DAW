@@ -1,0 +1,13 @@
+```mermaid
+classDiagram
+    class Pedido {
+        +int id
+        +float total
+    }
+
+    class Cliente {
+        +String nome
+    }
+
+    Cliente "1" --> "many" Pedido
+```
