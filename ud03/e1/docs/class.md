@@ -7,6 +7,7 @@ classDiagram
 
     class Cliente {
         +String nome
+        +String apelidos
     }
 
     Cliente "1" --> "many" Pedido
