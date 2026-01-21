@@ -7,13 +7,13 @@ public class Libro {
     public String tipo;
     public String editorial;
     public int ano;
-    public ArrayList<Autor> escrito;
+    public ArrayList<Autor> autores;
 
     public Libro(String nome, String tipo, String editorial, int ano) {
         this.nome = nome;
         this.tipo = tipo;
         this.editorial = editorial;
         this.ano = ano;
-        this.escrito = new ArrayList<>();
+        this.autores = new ArrayList<>();
     }
 }

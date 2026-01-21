@@ -11,9 +11,9 @@ class PrestamoTest {
     @Test
     void constructorInicializaCorrectamente() {
         Lector lector = new Lector(1, "Ana", "Pérez", "Rúa A");
-        Autor autor = new Autor("Miguel de Cervantes");
-        Libro libro = new Libro("El Quijote", autor);
-        Copia copia = new Copia(1001);
+        Autor autor = new Autor("Miguel de Cervantes", "Española", "1547-09-29");
+        Libro libro = new Libro("El Quijote", "Novela", "1234567890", 1605);
+        Copia copia = new Copia("1", libro);
         LocalDate fechaInicio = LocalDate.of(2025, 1, 1);
 
         Prestamo prestamo = new Prestamo(fechaInicio, lector, copia);
@@ -27,10 +27,13 @@ class PrestamoTest {
     @Test
     void calcularFechaFinEngade15Dias() {
         LocalDate fechaInicio = LocalDate.of(2025, 3, 10);
+        Autor autor = new Autor("Gabriel García Márquez", "Colombiana", "1927-03-06");
+        Libro libro = new Libro("Cien Años de Soledad", "Novela", "0987654321", 1967);
+        libro.autores.add(autor);
         Prestamo prestamo = new Prestamo(
                 fechaInicio,
                 new Lector(2, "Brais", "García", "Rúa B"),
-                new Copia(2002)
+                new Copia("1", libro)
         );
 
         assertEquals(LocalDate.of(2025, 3, 25), prestamo.calcularFechaFin());
@@ -39,10 +42,11 @@ class PrestamoTest {
     @Test
     void generarMultaDevuelveFalseSiNoEstaFueraDePlazo() {
         LocalDate fechaInicio = LocalDate.now().minusDays(5);
+        Libro libro = new Libro("1984", "Distopía", "Secker & Warburg", 1949);
         Prestamo prestamo = new Prestamo(
                 fechaInicio,
-                new Lector(3, "Uxía", "López", "Rúa C"),
-                new Copia(3003)
+                new Lector(2, "Brais", "García", "Rúa B"),
+                new Copia("1", libro)
         );
 
         assertFalse(prestamo.generarMulta());
@@ -51,10 +55,11 @@ class PrestamoTest {
     @Test
     void generarMultaDevuelveTrueSiEstaFueraDePlazo() {
         LocalDate fechaInicio = LocalDate.now().minusDays(30);
+        Libro libro = new Libro("1984", "Distopía", "Secker & Warburg", 1949);
         Prestamo prestamo = new Prestamo(
                 fechaInicio,
-                new Lector(4, "Xoán", "Fernández", "Rúa D"),
-                new Copia(4004)
+                new Lector(2, "Brais", "García", "Rúa B"),
+                new Copia("1", libro)
         );
 
         assertTrue(prestamo.generarMulta());
