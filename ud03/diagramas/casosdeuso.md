@@ -1,10 +1,3 @@
-1. Identificación de actores
-
-- Usuario normal
-- Traballador
-- Axente
-
-
 ```mermaid
 flowchart LR
     actorUsuario([Usuario])
