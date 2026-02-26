@@ -1,0 +1,44 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'e4 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'e4 1.0-SNAPSHOT API'
+com.example
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/src/main/java = 1772092097567
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/allpackages-index.html = 1772093459310
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/tag-search-index.js = 1772093459315
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/index-all.html = 1772093459326
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/allclasses-index.html = 1772093459309
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/type-search-index.js = 1772093459315
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/search.js = 1772093459330
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/overview-tree.html = 1772093459300
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/package-search-index.js = 1772093459311
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/jquery-ui.overrides.css = 1772093459334
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/member-search-index.js = 1772093459315
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/stylesheet.css = 1772093459329
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/script.js = 1772093459330
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/element-list = 1772093459273
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/index.html = 1772093459327
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/module-search-index.js = 1772093459311
+/home/vagrant/Desktop/repos/CD2025DAW/ud04/e4/target/reports/apidocs/help-doc.html = 1772093459329
