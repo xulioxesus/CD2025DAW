@@ -1,0 +1,4 @@
+#Tue Mar 03 12:09:58 CET 2026
+configuration*?=CC850E7A84997CD2208083EA5B76D0108A5058A8
+module-resource*?\:checkstyle-xpath-suppressions.xml=31DD0AAD8806F54B3238A0646ED1C592986AB437
+module-resource*?\:checkstyle-suppressions.xml=B3B24E503E503834A1062B044DF4D140F1AE63E9
