@@ -5,20 +5,11 @@ import java.util.List;
 public class Participante {
     public String nombre;
     public String email;
+    public String tipo;
 
-    public List<Conferencia> conferencias;
-
-    public Participante(String nombre, String email) {
+    public Participante(String nombre, String email, String tipo) {
         this.nombre = nombre;
         this.email = email;
-        this.conferencias = List.of();
-    }
-
-    public void inscribirEnConferencia(Conferencia conferencia) {
-        this.conferencias.add(conferencia);
-    }
-
-    public void cancelarInscripcion(Conferencia conferencia) {
-        this.conferencias.remove(conferencia);
+        this.tipo = tipo;
     }
 }

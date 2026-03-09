@@ -41,5 +41,5 @@ Participante -- Conferencia: inscribir/cancelar
 
 Sesion "1..*" -- "0..*" Artigo : presentar
 
-Autor "1..*" -- "1..*" Artigo : escribir
+Autor "1..*" -- "1..*" Artigo : agregar/eliminar
 ```

@@ -8,18 +8,20 @@ public class Conferencia {
     public LocalDate dataInicio;
     public LocalDate dataFin;
 
-    public Conferencia(String titulo, String fecha, String lugar) {
-        this.titulo = titulo;
-        this.fecha = fecha;
+    private List<Participante> participantes = new ArrayList<>();
+
+    public Conferencia(String nome, String lugar, LocalDate dataInicio, LocalDate dataFin) {
+        this.nome = nome;
         this.lugar = lugar;
-        this.participantes = List.of();
+        this.dataInicio = dataInicio;
+        this.dataFin = dataFin;
     }
 
-    public void agregarParticipante(Participante participante) {
+    public void inscribir(Participante participante) {
         this.participantes.add(participante);
     }
 
-    public void eliminarParticipante(Participante participante) {
+    public void cancelar(Participante participante) {
         this.participantes.remove(participante);
     }
 }
