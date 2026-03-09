@@ -3,11 +3,10 @@ package com.example;
 import java.util.List;
 
 public class Conferencia {
-    public String titulo;
-    public String fecha;
+    public String nome;
     public String lugar;
-
-    public List<Participante> participantes;
+    public LocalDate dataInicio;
+    public LocalDate dataFin;
 
     public Conferencia(String titulo, String fecha, String lugar) {
         this.titulo = titulo;

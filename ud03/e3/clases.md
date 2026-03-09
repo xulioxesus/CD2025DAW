@@ -6,21 +6,14 @@ direction LR
 class Conferencia {
   +String nome
   +String lugar
-  +Date dataInicio
-  +Date dataFin
+  +LocalDate dataInicio
+  +LocalDate dataFin
 }
 
 class Sesion {
-  +Date data
+  +LocalDate data
   +Time horaInicio
   +String titulo
-}
-
-class Inscricion {
-  +Date dataInscricion
-  +String estado
-  +confirmar()
-  +cancelar()
 }
 
 class Participante {
@@ -41,12 +34,12 @@ class Autor {
 
 
 %% Relacións
-Conferencia "1" *-- "1..*" Sesion : contén
+Conferencia "1" --* "0..*" Sesion
 
-Participante "1" -- "1" Inscricion
-Inscricion -- Conferencia
+Participante "0..*" -- "0..*" Sesion: participar
+Participante -- Conferencia: inscribir/cancelar
 
-Sesion "1..*" -- "1..*" Artigo : presenta
+Sesion "1..*" -- "0..*" Artigo : presentar
 
-Autor "1..*" -- "1..*" Artigo : escribe
+Autor "1..*" -- "1..*" Artigo : escribir
 ```
